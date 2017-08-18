@@ -12,6 +12,10 @@ get '/users/new' do
   erb :'users/new'
 end
 
+get '/users/about' do 
+  erb :'users/about'
+end
+
 
 #create new
 post '/users' do
@@ -47,6 +51,7 @@ get '/users/:id/edit' do
   erb :'users/edit'
 end
 
+
 #update
 put '/users/:id' do
   @user = User.find(params[:id])
@@ -63,12 +68,20 @@ end
 #   update_user
 # end
 
-
-#delete
 delete '/users/:id' do
   User.find(params[:id]).destroy!
   session[:id] = nil
   redirect '/'
 end
+
+get '/users/:id/forecasts' do
+  @user = User.find(params[:id])
+  p @user.forecasts
+  if session[:id] = @user.id
+    erb :'users/forecasts'
+  end
+end
+
+
 
 
