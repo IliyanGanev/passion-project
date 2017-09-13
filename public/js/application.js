@@ -44,21 +44,23 @@ function topFunction() {
 }
 
 
-$( function() {
-  $( "#datepicker" )..datepicker({ minDate: "-30Y", maxDate: "-1D" });
+$(function() {
+  $("#datepicker").datepicker({ minDate: "-30Y", maxDate: "-1D" });
 });
 //Get yesterday's date.
-// $( function() {
-//   $( "#datepicker1" ).datepicker().datepicker("setDate", "-1D");
-// });
+$(function() {
+  $("#datepicker1").datepicker().datepicker("setDate", "-1D");
+});
 
 // Confirm delete user profile. 
 function ConfirmDelete(){
   var x = confirm("Are you sure you want to delete?");
-  if (x)
+  if (x){
     return true;
-  else
+  }
+  else{
     return false;
+  }
 }
 
 
