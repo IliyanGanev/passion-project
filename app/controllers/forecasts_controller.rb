@@ -6,10 +6,10 @@ get '/forecasts'  do
   @forecasts = Forecast.all
 end
 
-get '/forecasts/new' do
-  @forecast = Forecast.new
-  erb :'/forecasts/new'
-end
+# get '/forecasts/new' do
+#   @forecast = Forecast.new
+#   erb :'/forecasts/new'
+# end
 
 post '/forecasts' do
   @forecast = Forecast.new(params[:forecast])

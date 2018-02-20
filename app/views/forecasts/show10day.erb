@@ -1,7 +1,7 @@
 <%if @forecast%>
 
 
-<h2><a href="/forecasts/new"><mark id='location'><%=@weather_json['current_observation']['display_location']['full']%></mark></a></h2>
+<h4><a href="/"><mark id='location'><%=@weather_json['current_observation']['display_location']['full']%></mark></a></h4>
 
 <%=erb :'_menu'%>
 

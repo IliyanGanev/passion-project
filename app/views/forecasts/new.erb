@@ -1,4 +1,4 @@
-<a class="get-forecast">forecast for any location</a>
+<a class="get-forecast">SMS on your phone</a>
 
 <form id="forecast-form" action="/forecasts" method = "post">
 	<input class="input-field" type = "text" name = "forecast[city]" value="<%=@forecast.city%>"  placeholder="city">
@@ -11,4 +11,11 @@
 	<input type = "submit", value = "forecast" id='forecastbutton'>
 	<%= erb :'_errors' %>
 </form>
+
+<div class=datetime>
+	<div id='clock'>
+	</div>
+	<div id='date'>
+	</div>
+</div>
 
