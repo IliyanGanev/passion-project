@@ -85,21 +85,24 @@ a:active {
 }
 
 .errors{
-  color:  #ffd100;
+  color: #1dc6df;
 }
 
 #forecastbutton{
-background:rgba(0, 10000, 2303, 0.3);
+background:rgba(0, 0, 0, 0.0);
 /*background-color: #006881;*/
 border: 1px solid #006881;
 border-radius: 2px;
+border: 1px solid #1dc6df;
+color: #1dc6df;
 
 }
 
 #forecastbutton:hover{
-
+ 
+  color:#1dc6df;
   cursor: pointer;
-  background:rgba(0, 100000, 2303, 0.4);
+  background:rgba(0, 100000, 2303, 0.1);
 
 
 }
@@ -112,8 +115,8 @@ border-radius: 2px;
   max-width: 55%;
   margin: 0em auto;
   background:rgba(0, 0, 0, 0.3);
-  border-radius: 0.5em;
-  box-shadow: 5px 5px 20px black;
+  border-radius: 0.2em;
+  box-shadow: 2px 2px 10px black;
   margin-top: 16%;
   font-family: 'Raleway', sans-serif;
 }
@@ -253,7 +256,7 @@ border-radius: 2px;
   padding: 1em 0.5em;
   background:rgba(0, 0, 0, 0.2);
   border-radius: 0.6em;
-  box-shadow: 5px 5px 20px black;
+  box-shadow: 5px 5px 10px black;
   /*margin-top: 15%;*/
   margin-top: 3em;
 }
@@ -868,4 +871,6 @@ border-radius: 2px;
 
 
 }
+
+
 
